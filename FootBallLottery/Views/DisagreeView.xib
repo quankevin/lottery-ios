@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DisagreeView">
+            <rect key="frame" x="0.0" y="0.0" width="270" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title_field.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZJm-Wq-9p9">
+                    <rect key="frame" x="0.0" y="0.0" width="270" height="36"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我不赞同" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEL-7W-gp4">
+                    <rect key="frame" x="0.0" y="0.0" width="270" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textbackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="8lx-6T-VWv">
+                    <rect key="frame" x="0.0" y="36" width="270" height="133"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textfield_analyse.png" translatesAutoresizingMaskIntoConstraints="NO" id="8e3-Jn-5OZ">
+                    <rect key="frame" x="10" y="44" width="250" height="116"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="大神，写下您不赞同的原因吧！" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VD8-6S-TLG">
+                    <rect key="frame" x="10" y="44" width="250" height="116"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="p4c-wf-e6c"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4a7-pa-Yp2">
+                    <rect key="frame" x="0.0" y="170" width="270" height="30"/>
+                    <state key="normal" backgroundImage="disagree_normal.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="disagree_height.png"/>
+                    <connections>
+                        <action selector="doneActionClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="p2Q-Gp-ZBQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.16862745098039217" green="0.18823529411764706" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="disAgreeTextField" destination="VD8-6S-TLG" id="v4V-Uv-16H"/>
+            </connections>
+            <point key="canvasLocation" x="355" y="278"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="disagree_height.png" width="270" height="30"/>
+        <image name="disagree_normal.png" width="270" height="30"/>
+        <image name="textbackground.png" width="270" height="133"/>
+        <image name="textfield_analyse.png" width="251" height="116"/>
+        <image name="title_field.png" width="270" height="36"/>
+    </resources>
+</document>

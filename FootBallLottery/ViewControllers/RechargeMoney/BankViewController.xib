@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BankViewController">
+            <connections>
+                <outlet property="bankBg" destination="xpq-Tl-81X" id="JPf-6f-oR5"/>
+                <outlet property="bankTextField" destination="6LP-8s-Sgo" id="0nq-B4-rVt"/>
+                <outlet property="bankView" destination="S7q-vX-9ms" id="cXg-SV-nn3"/>
+                <outlet property="cardHolderBg" destination="OOc-o5-MFA" id="pgT-al-x8f"/>
+                <outlet property="cardHolderTextField" destination="mWZ-j0-uBb" id="vCO-c0-BwT"/>
+                <outlet property="cardIdBg" destination="JxU-nI-GAL" id="5sC-dV-zmp"/>
+                <outlet property="cardIdTextField" destination="8j3-gQ-n7T" id="IVJ-tQ-aEm"/>
+                <outlet property="cardNumberBg" destination="5hh-p7-fHc" id="jVI-Si-v4g"/>
+                <outlet property="cardNumberTextField" destination="WWd-10-1DM" id="ZWt-vd-DaY"/>
+                <outlet property="checkCodeBg" destination="TIa-Dr-Jus" id="HJE-aP-TvF"/>
+                <outlet property="checkCodeTextField" destination="SvM-D4-oXq" id="1eR-2O-xsb"/>
+                <outlet property="creadBankNameBg" destination="rYE-80-1Xc" id="yLa-ub-2EM"/>
+                <outlet property="creadBankNameTextField" destination="j41-hz-fKj" id="KDE-mT-4VS"/>
+                <outlet property="creadBankView" destination="YZv-y5-AFH" id="n60-wE-6YF"/>
+                <outlet property="creadCardIdBg" destination="2q7-9t-vG6" id="SaU-bp-T4k"/>
+                <outlet property="creadCardNumBg" destination="18D-h5-ZXw" id="rRE-sk-8C3"/>
+                <outlet property="creadCardNumTextField" destination="BdO-Z1-c7n" id="f7L-n1-eVm"/>
+                <outlet property="creadCheckCodeBg" destination="mJT-Zc-DR0" id="oWn-K4-XeM"/>
+                <outlet property="creadCheckCodeTextField" destination="0Yi-se-Zr8" id="5Mg-st-qAN"/>
+                <outlet property="creadHolderBg" destination="4T4-3j-AXb" id="vOK-Rj-PB9"/>
+                <outlet property="creadHolderTextField" destination="TX0-Ge-6Ss" id="OJ3-sm-fCc"/>
+                <outlet property="creadIdTextField" destination="ScV-U7-O0J" id="3sr-UN-LPo"/>
+                <outlet property="creadTelephoneBg" destination="cYy-R4-50Q" id="58e-Ma-Xba"/>
+                <outlet property="creadTelephoneTextField" destination="N2c-hm-SCY" id="9K7-gQ-aTS"/>
+                <outlet property="creditCheckCodeBtn" destination="Yih-x4-YaD" id="Aa2-bS-wbx"/>
+                <outlet property="cvnCodeBg" destination="in8-Cw-b5y" id="eaE-xC-48H"/>
+                <outlet property="cvnCodeTextField" destination="VGY-uV-LL2" id="VtU-Wo-td4"/>
+                <outlet property="headView" destination="fSD-re-taO" id="HkD-dO-KuR"/>
+                <outlet property="indateBg" destination="XQy-kx-Zyb" id="kSE-xs-jgq"/>
+                <outlet property="indateTextField" destination="EYj-l7-ZP2" id="rdI-X0-8fo"/>
+                <outlet property="saveCheckCodeBtn" destination="cLg-wK-pF1" id="4JM-pi-qUl"/>
+                <outlet property="telephoneBg" destination="u5y-Oq-pFb" id="JsD-bw-elu"/>
+                <outlet property="telephoneTextField" destination="KNd-BP-dXb" id="LkG-yi-PsT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" red="0.2156862745" green="0.21960784310000001" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="718" y="-132"/>
+        </view>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fSD-re-taO">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saO-8S-BFw">
+                    <rect key="frame" x="1" y="20" width="50" height="50"/>
+                    <state key="normal" image="back.png">
+                        <color key="titleColor" red="0.074509803920000006" green="0.54117647059999996" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="lKp-GB-DDM"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="选择银行卡" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ecp-lb-vmV">
+                    <rect key="frame" x="82" y="20" width="156" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.074509803920000006" green="0.54117647059999996" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="1380" y="-397"/>
+        </view>
+        <view contentMode="scaleToFill" id="S7q-vX-9ms">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textfield_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="OOc-o5-MFA">
+                    <rect key="frame" x="10" y="10" width="300" height="35"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  持卡人：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNe-hV-dtR">
+                    <rect key="frame" x="10" y="10" width="83" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入持卡人姓名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mWZ-j0-uBb">
+                    <rect key="frame" x="85" y="10" width="220" height="35"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="qOK-gQ-mUo"/>
+                    </connections>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textfield_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="JxU-nI-GAL">
+                    <rect key="frame" x="10" y="63" width="300" height="35"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  身份证：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POx-aV-UmK">
+                    <rect key="frame" x="10" y="63" width="81" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请填写身份证号码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8j3-gQ-n7T">
+                    <rect key="frame" x="85" y="63" width="220" height="35"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="UY6-bn-ct6"/>
+                    </connections>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textfield_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="xpq-Tl-81X">
+                    <rect key="frame" x="10" y="117" width="300" height="35"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  银    行：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRr-32-xx0">
+                    <rect key="frame" x="10" y="117" width="81" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入银行名称" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6LP-8s-Sgo">
+                    <rect key="frame" x="85" y="117" width="185" height="35"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="a7h-hb-7wa"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOT-Dh-sMk">
+                    <rect key="frame" x="270" y="117" width="40" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="yinhangka.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="selectBankAction:" destination="-1" eventType="touchUpInside" id="2WZ-ty-mYb"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textfield_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="5hh-p7-fHc">
+                    <rect key="frame" x="10" y="168" width="300" height="35"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  卡    号：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOy-dw-yM2">
+                    <rect key="frame" x="10" y="167" width="81" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请填写卡号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WWd-10-1DM">
+                    <rect key="frame" x="85" y="167" width="220" height="35"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="7wk-6k-MvQ"/>
+                    </connections>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textfield_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="u5y-Oq-pFb">
+                    <rect key="frame" x="10" y="220" width="300" height="35"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  预留手机号：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvx-cs-DWG">
+                    <rect key="frame" x="10" y="220" width="117" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入预留手机号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KNd-BP-dXb">
+                    <rect key="frame" x="126" y="220" width="144" height="35"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="ukT-lN-YcO"/>
+                    </connections>
+                </textField>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ie-Jd-m2u">
+                    <rect key="frame" x="270" y="220" width="40" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="kaihudi.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textfield_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="TIa-Dr-Jus">
+                    <rect key="frame" x="10" y="272" width="232" height="35"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  验证码：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNz-hv-i1X">
+                    <rect key="frame" x="10" y="272" width="81" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入验证码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SvM-D4-oXq">
+                    <rect key="frame" x="85" y="272" width="124" height="35"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="KLL-Zn-Cdp"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLg-wK-pF1">
+                    <rect key="frame" x="240" y="273" width="65" height="33"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" backgroundImage="check_code.png">
+                        <color key="titleColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="0.67843137249999996" green="0.68235294120000001" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="senderCheckCode:" destination="-1" eventType="touchUpInside" id="aEH-aC-DnV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRc-kb-199">
+                    <rect key="frame" x="10" y="339" width="300" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" image="tijiao_normal.png">
+                        <color key="titleColor" red="0.074509803920000006" green="0.54117647059999996" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="tijiao_active.png">
+                        <color key="titleColor" red="0.67843137249999996" green="0.68235294120000001" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="doneAction:" destination="-1" eventType="touchUpInside" id="lSi-8Z-gkl"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="1124" y="-160"/>
+        </view>
+        <view contentMode="scaleToFill" id="YZv-y5-AFH">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="398"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textfield_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="4T4-3j-AXb">
+                    <rect key="frame" x="10" y="3" width="300" height="35"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  持卡人：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTH-c5-q9M">
+                    <rect key="frame" x="10" y="3" width="83" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入持卡人姓名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TX0-Ge-6Ss">
+                    <rect key="frame" x="85" y="3" width="220" height="35"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="z2f-EO-kLg"/>
+                    </connections>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textfield_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="2q7-9t-vG6">
+                    <rect key="frame" x="10" y="45" width="300" height="35"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  身份证：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zP-Yp-pDd">
+                    <rect key="frame" x="10" y="45" width="81" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请填写身份证号码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ScV-U7-O0J">
+                    <rect key="frame" x="85" y="45" width="220" height="35"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="2N1-m4-RdI"/>
+                    </connections>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textfield_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="rYE-80-1Xc">
+                    <rect key="frame" x="10" y="86" width="300" height="35"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  银    行：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsH-5F-0ta">
+                    <rect key="frame" x="10" y="86" width="81" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入银行名称" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j41-hz-fKj">
+                    <rect key="frame" x="85" y="86" width="185" height="35"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="NHi-Ly-kUK"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="suo-R8-dT0">
+                    <rect key="frame" x="270" y="86" width="40" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="yinhangka.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="selectBankAction:" destination="-1" eventType="touchUpInside" id="dTj-Hb-30O"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textfield_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="18D-h5-ZXw">
+                    <rect key="frame" x="10" y="128" width="300" height="35"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  卡    号：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vD-uW-y6K">
+                    <rect key="frame" x="10" y="127" width="81" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请填写卡号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BdO-Z1-c7n">
+                    <rect key="frame" x="85" y="127" width="220" height="35"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="4At-UC-R16"/>
+                    </connections>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textfield_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="XQy-kx-Zyb">
+                    <rect key="frame" x="10" y="169" width="300" height="35"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  信用卡有效期：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixK-27-4cn">
+                    <rect key="frame" x="10" y="169" width="131" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="格式1410" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EYj-l7-ZP2">
+                    <rect key="frame" x="139" y="169" width="168" height="35"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="vyu-o8-fPU"/>
+                    </connections>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textfield_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="in8-Cw-b5y">
+                    <rect key="frame" x="10" y="210" width="300" height="35"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  信用卡CVN码：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPd-H5-YXi">
+                    <rect key="frame" x="10" y="209" width="131" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="格式866" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VGY-uV-LL2">
+                    <rect key="frame" x="139" y="209" width="166" height="35"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="1uA-1X-hF7"/>
+                    </connections>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textfield_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="cYy-R4-50Q">
+                    <rect key="frame" x="10" y="251" width="300" height="35"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  预留手机号：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ej4-lz-dsx">
+                    <rect key="frame" x="10" y="251" width="117" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入预留手机号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N2c-hm-SCY">
+                    <rect key="frame" x="126" y="251" width="144" height="35"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="jcZ-00-yoh"/>
+                    </connections>
+                </textField>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkv-Zg-DAc">
+                    <rect key="frame" x="270" y="251" width="40" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="kaihudi.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textfield_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="mJT-Zc-DR0">
+                    <rect key="frame" x="10" y="293" width="229" height="35"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  验证码：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tH-Dw-bxR">
+                    <rect key="frame" x="10" y="293" width="81" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入验证码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Yi-se-Zr8">
+                    <rect key="frame" x="85" y="293" width="124" height="35"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="N4O-xb-dok"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yih-x4-YaD">
+                    <rect key="frame" x="238" y="294" width="65" height="33"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" backgroundImage="check_code.png">
+                        <color key="titleColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="0.67843137249999996" green="0.68235294120000001" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="senderCheckCode:" destination="-1" eventType="touchUpInside" id="hiM-uG-3mm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqb-nH-aV8">
+                    <rect key="frame" x="10" y="343" width="300" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" image="tijiao_normal.png">
+                        <color key="titleColor" red="0.074509803920000006" green="0.54117647059999996" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="tijiao_active.png">
+                        <color key="titleColor" red="0.67843137249999996" green="0.68235294120000001" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="doneAction:" destination="-1" eventType="touchUpInside" id="9rD-cp-ClS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="771" y="-159"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back.png" width="11" height="21"/>
+        <image name="check_code.png" width="65" height="32"/>
+        <image name="kaihudi.png" width="10" height="13"/>
+        <image name="textfield_normal.png" width="300" height="34"/>
+        <image name="tijiao_active.png" width="300" height="34"/>
+        <image name="tijiao_normal.png" width="300" height="34"/>
+        <image name="yinhangka.png" width="16" height="11"/>
+    </resources>
+</document>

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MoreTollgateView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="374"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="标准过关" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qr-5v-HrG">
+                    <rect key="frame" x="9" y="13" width="75" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.82745098039999998" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VN2-5i-vob">
+                    <rect key="frame" x="4" y="49" width="55" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="1串1" backgroundImage="chuanguan_normal_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="chuanguan_active.png"/>
+                    <connections>
+                        <action selector="selectTollgateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="BoK-Ij-yS0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6I-Dz-wi0">
+                    <rect key="frame" x="63" y="49" width="55" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="2串1" backgroundImage="chuanguan_normal_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="chuanguan_active.png"/>
+                    <connections>
+                        <action selector="selectTollgateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="O1S-HC-X0A"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGu-1k-lr2">
+                    <rect key="frame" x="122" y="49" width="55" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="3串1" backgroundImage="chuanguan_normal_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="chuanguan_active.png"/>
+                    <connections>
+                        <action selector="selectTollgateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="xNC-Rk-RpG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ani-Bl-Jbg">
+                    <rect key="frame" x="180" y="49" width="55" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="4串1" backgroundImage="chuanguan_normal_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="chuanguan_active.png"/>
+                    <connections>
+                        <action selector="selectTollgateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="mzI-aD-E3z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGy-61-8jQ">
+                    <rect key="frame" x="240" y="49" width="55" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="5串1" backgroundImage="chuanguan_normal_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="chuanguan_active.png"/>
+                    <connections>
+                        <action selector="selectTollgateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Klx-t6-OFH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEJ-uV-Ktp">
+                    <rect key="frame" x="181" y="126" width="55" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="4串5" backgroundImage="chuanguan_normal_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="chuanguan_active.png"/>
+                    <connections>
+                        <action selector="selectTollgateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Jec-Y9-swk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMI-Zp-Ofo">
+                    <rect key="frame" x="241" y="126" width="55" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="4串6" backgroundImage="chuanguan_normal_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="chuanguan_active.png"/>
+                    <connections>
+                        <action selector="selectTollgateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="JRw-FX-4K3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugG-kt-ug5">
+                    <rect key="frame" x="5" y="164" width="55" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="4串11" backgroundImage="chuanguan_normal_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="chuanguan_active.png"/>
+                    <connections>
+                        <action selector="selectTollgateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ext-MU-Ijm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6km-dK-nWd">
+                    <rect key="frame" x="181" y="164" width="55" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="5串10" backgroundImage="chuanguan_normal_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="chuanguan_active.png"/>
+                    <connections>
+                        <action selector="selectTollgateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="aYB-kB-bgM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3t-Wh-PFE">
+                    <rect key="frame" x="241" y="164" width="55" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="5串16" backgroundImage="chuanguan_normal_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="chuanguan_active.png"/>
+                    <connections>
+                        <action selector="selectTollgateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="miJ-j5-o1J"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="19" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7a-yH-jgQ">
+                    <rect key="frame" x="181" y="206" width="55" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="6串7" backgroundImage="chuanguan_normal_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="chuanguan_active.png"/>
+                    <connections>
+                        <action selector="selectTollgateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="cCn-ks-TAn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBV-Qy-YtY">
+                    <rect key="frame" x="241" y="206" width="55" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="6串15" backgroundImage="chuanguan_normal_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="chuanguan_active.png"/>
+                    <connections>
+                        <action selector="selectTollgateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="5OQ-Hv-7QG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="24" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yk5-a8-Odx">
+                    <rect key="frame" x="181" y="250" width="55" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="6串42" backgroundImage="chuanguan_normal_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="chuanguan_active.png"/>
+                    <connections>
+                        <action selector="selectTollgateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="W95-ne-61B"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="25" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emv-M8-xlI">
+                    <rect key="frame" x="241" y="250" width="55" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="6串50" backgroundImage="chuanguan_normal_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="chuanguan_active.png"/>
+                    <connections>
+                        <action selector="selectTollgateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="ebK-ok-Z1a"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gt-Va-Vez">
+                    <rect key="frame" x="5" y="126" width="55" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="3串3" backgroundImage="chuanguan_normal_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="chuanguan_active.png"/>
+                    <connections>
+                        <action selector="selectTollgateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="M77-2d-9Ic"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPk-bn-H8A">
+                    <rect key="frame" x="64" y="126" width="55" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="3串4" backgroundImage="chuanguan_normal_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="chuanguan_active.png"/>
+                    <connections>
+                        <action selector="selectTollgateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="442-aT-asw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxV-4w-aPN">
+                    <rect key="frame" x="123" y="126" width="55" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="4串4" backgroundImage="chuanguan_normal_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="chuanguan_active.png"/>
+                    <connections>
+                        <action selector="selectTollgateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="flX-NM-QZB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIt-LP-41r">
+                    <rect key="frame" x="64" y="164" width="55" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="5串5" backgroundImage="chuanguan_normal_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="chuanguan_active.png"/>
+                    <connections>
+                        <action selector="selectTollgateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="u0R-pY-EzY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qE4-DN-SJD">
+                    <rect key="frame" x="123" y="164" width="55" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="5串6" backgroundImage="chuanguan_normal_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="chuanguan_active.png"/>
+                    <connections>
+                        <action selector="selectTollgateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="4AX-dp-79I"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73T-iW-j0h">
+                    <rect key="frame" x="5" y="206" width="55" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="5串20" backgroundImage="chuanguan_normal_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="chuanguan_active.png"/>
+                    <connections>
+                        <action selector="selectTollgateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="GbJ-1f-6lI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="17" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQF-eR-Mdv">
+                    <rect key="frame" x="64" y="206" width="55" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="5串26" backgroundImage="chuanguan_normal_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="chuanguan_active.png"/>
+                    <connections>
+                        <action selector="selectTollgateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="mRA-IN-Jv0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="18" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEe-vE-ZK9">
+                    <rect key="frame" x="123" y="206" width="55" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="6串6" backgroundImage="chuanguan_normal_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="chuanguan_active.png"/>
+                    <connections>
+                        <action selector="selectTollgateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="x6Q-YB-Pza"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEx-Ui-wwj">
+                    <rect key="frame" x="5" y="250" width="55" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="6串20" backgroundImage="chuanguan_normal_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="chuanguan_active.png"/>
+                    <connections>
+                        <action selector="selectTollgateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="w5Q-oJ-RVo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KRd-BY-hoa">
+                    <rect key="frame" x="4" y="291" width="55" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="6串57" backgroundImage="chuanguan_normal_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="chuanguan_active.png"/>
+                    <connections>
+                        <action selector="selectTollgateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="EH1-k1-D7Z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="22" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7r-bO-7V2">
+                    <rect key="frame" x="64" y="250" width="55" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="6串22" backgroundImage="chuanguan_normal_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="chuanguan_active.png"/>
+                    <connections>
+                        <action selector="selectTollgateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="R98-f5-zgP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="23" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCa-mx-SS5">
+                    <rect key="frame" x="123" y="250" width="55" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="6串35" backgroundImage="chuanguan_normal_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="chuanguan_active.png"/>
+                    <connections>
+                        <action selector="selectTollgateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Zpq-8H-pl5"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="复杂过关" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSN-h8-DQI">
+                    <rect key="frame" x="9" y="87" width="75" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.82745098039999998" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGb-r5-pma">
+                    <rect key="frame" x="160" y="334" width="130" height="30"/>
+                    <color key="backgroundColor" red="0.074509803920000006" green="0.54901960780000003" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="确定">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="doneActionClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="1kH-XK-Y3R"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2X-q6-xtW">
+                    <rect key="frame" x="8" y="334" width="130" height="30"/>
+                    <color key="backgroundColor" red="0.1215686275" green="0.12549019610000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="取消">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancleActionClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Jbt-gp-9Ys"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.16862745100000001" green="0.18823529410000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="331" y="208"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chuanguan_active.png" width="44" height="32"/>
+        <image name="chuanguan_normal_01.png" width="55" height="27"/>
+    </resources>
+</document>

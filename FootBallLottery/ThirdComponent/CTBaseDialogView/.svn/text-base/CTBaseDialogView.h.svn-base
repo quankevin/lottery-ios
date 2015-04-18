@@ -1,0 +1,53 @@
+//
+//  CTBaseDialogView.h
+//  MulScreen
+//
+//  Created by lingmin on 12-3-23.
+//  Copyright 2012 Shenzhen iDooFly Technology Co., Ltd. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+
+
+typedef NS_ENUM (NSInteger, CTAnimationType){
+    CTAnimationTypeNone = 0,
+    CTAnimationTypeDownToUp = 1,
+    CTAnimationTypeUpToDown = 2,
+    CTAnimationTypeStepChange = 3,
+    CTAnimationTypeAlphaTo1 = 4,
+    CTAnimationTypeAlphaTo0 = 5,
+    CTAnimationTypeUnwind = 6,
+    CTAnimationTypeOverturn = 7
+};
+
+@interface CTBaseDialogView : UIView
+{
+	UIView *overView;// 遮挡层
+	UIScrollView *mainView;//添加视图层
+	UIDeviceOrientation _orientation;
+	BOOL _showingKeyboard;
+    CTAnimationType _animationType;
+}
+
+@property (nonatomic, strong) UIView *bodyView;
+
+@property (nonatomic, assign) BOOL isNoReposeWhenBackgroundTouched;
+@property (nonatomic, assign) BOOL isNoNeedCloseBtn;
+
+@property (nonatomic, assign) id target;
+@property (nonatomic, assign) SEL selector;
+
+- (id)initWithSubView:(UIView*)subView animation:(CTAnimationType)animationType fromFrame:(CGRect)fromFrame;
+- (void)show;
+- (void)showTime:(NSTimeInterval)time withAnimation:(CTAnimationType)animationType;
+- (void)showWithAnimation:(CTAnimationType)animationType;
+- (void)close;
+- (void)close:(BOOL)animation;
+- (void)close:(BOOL)animation target:(id)target selector:(SEL)selector;
+
+- (void)addTarget:(id)target selector:(SEL)selector;
+
+- (void)animationWithShow;  //在已经显示出来的情况下再次模拟打开时候的动画
+
+@end
